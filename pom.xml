@@ -16,10 +16,8 @@
     <description>Cache Consumer Components</description>
 
     <properties>
-        <assembly-common-component-jar.finalName>cache-common-component-${project.version}
-        </assembly-common-component-jar.finalName>
-        <assembly-consumer-component-jar.finalName>cache-consumer-component-${project.version}
-        </assembly-consumer-component-jar.finalName>
+        <assembly-common-component-jar.finalName>cache-common-component-${project.version}</assembly-common-component-jar.finalName>
+        <assembly-consumer-component-jar.finalName>cache-consumer-component-${project.version}</assembly-consumer-component-jar.finalName>
     </properties>
 
     <dependencies>
