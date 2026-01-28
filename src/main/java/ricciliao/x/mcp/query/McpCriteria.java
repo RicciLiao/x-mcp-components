@@ -1,16 +1,18 @@
-package ricciliao.x.cache.query;
+package ricciliao.x.mcp.query;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-public class CacheQuery {
+public class McpCriteria {
 
     public enum Property {
         CREATED_DTM,
         UPDATED_DTM,
-        CACHE_KEY;
+        ID,
+        TTL,
+        ;
 
         Property() {
         }

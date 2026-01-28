@@ -10,15 +10,13 @@
         <fileSet>
             <directory>${project.build.outputDirectory}</directory>
             <includes>
-                <include>ricciliao/x/cache/annotation/*.class</include>
-                <include>ricciliao/x/cache/pojo/AbstractCacheOperation.class</include>
-                <include>ricciliao/x/cache/pojo/AbstractCacheOperation$Single.class</include>
-                <include>ricciliao/x/cache/pojo/AbstractCacheOperation$Batch.class</include>
-                <include>ricciliao/x/cache/pojo/StoreIdentifier.class</include>
-                <include>ricciliao/x/cache/pojo/ProviderInfo.class</include>
-                <include>ricciliao/x/cache/pojo/StoreCache.class</include>
-                <include>ricciliao/x/cache/query/*.class</include>
-                <include>ricciliao/x/cache/XCacheConstants.class</include>
+                <include>ricciliao/x/mcp/annotation/*.class</include>
+                <include>ricciliao/x/mcp/McpIdentifier.class</include>
+                <include>ricciliao/x/mcp/McpProviderInfo.class</include>
+                <include>ricciliao/x/mcp/McpCache.class</include>
+                <include>ricciliao/x/mcp/query/*.class</include>
+                <include>ricciliao/x/mcp/McpConstants.class</include>
+                <include>ricciliao/x/mcp/McpCacheData.class</include>
             </includes>
             <outputDirectory>/</outputDirectory>
         </fileSet>

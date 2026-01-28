@@ -1,21 +1,21 @@
-package ricciliao.x.cache.pojo;
+package ricciliao.x.mcp;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class StoreIdentifier implements Serializable {
+public class McpIdentifier implements Serializable {
     @Serial
     private static final long serialVersionUID = -6723685925978483107L;
     private String consumer;
     private String store;
 
-    public StoreIdentifier(String consumer, String store) {
+    public McpIdentifier(String consumer, String store) {
         this.consumer = consumer;
         this.store = store;
     }
 
-    public StoreIdentifier() {
+    public McpIdentifier() {
     }
 
     public String getConsumer() {
@@ -47,7 +47,7 @@ public class StoreIdentifier implements Serializable {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof StoreIdentifier that)) return false;
+        if (!(o instanceof McpIdentifier that)) return false;
         return Objects.equals(getConsumer(), that.getConsumer()) && Objects.equals(getStore(), that.getStore());
     }
 

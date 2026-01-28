@@ -1,35 +1,33 @@
-package ricciliao.x.cache.pojo;
+package ricciliao.x.mcp;
 
-import ricciliao.x.cache.annotation.CacheId;
-import ricciliao.x.cache.annotation.Store;
-import ricciliao.x.cache.query.CacheQuery;
-import ricciliao.x.component.payload.PayloadData;
+import ricciliao.x.mcp.annotation.Data;
+import ricciliao.x.mcp.query.McpCriteria;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
 
-public class StoreCache<T extends Serializable> implements PayloadData {
+public class McpCache<T extends Serializable> implements Serializable {
     @Serial
     private static final long serialVersionUID = -7838083516165280621L;
 
-    @CacheQuery.Support(CacheQuery.Property.CACHE_KEY)
-    @CacheId
-    private String cacheKey;
-    @CacheQuery.Support(CacheQuery.Property.CREATED_DTM)
+    @McpCriteria.Support(McpCriteria.Property.ID)
+    private String uid;
+    @McpCriteria.Support(McpCriteria.Property.CREATED_DTM)
     private Instant createdDtm;
-    @CacheQuery.Support(CacheQuery.Property.UPDATED_DTM)
+    @McpCriteria.Support(McpCriteria.Property.UPDATED_DTM)
     private Instant updatedDtm;
+    @McpCriteria.Support(McpCriteria.Property.TTL)
     private Instant ttlEffectedDtm;
-    @Store
-    private T store;
+    @Data
+    private T data;
 
-    public String getCacheKey() {
-        return cacheKey;
+    public String getUid() {
+        return uid;
     }
 
-    public void setCacheKey(String cacheKey) {
-        this.cacheKey = cacheKey;
+    public void setUid(String uid) {
+        this.uid = uid;
     }
 
     public Instant getCreatedDtm() {
@@ -56,11 +54,11 @@ public class StoreCache<T extends Serializable> implements PayloadData {
         this.ttlEffectedDtm = ttlEffectedDtm;
     }
 
-    public T getStore() {
-        return store;
+    public T getData() {
+        return data;
     }
 
-    public void setStore(T store) {
-        this.store = store;
+    public void setData(T data) {
+        this.data = data;
     }
 }

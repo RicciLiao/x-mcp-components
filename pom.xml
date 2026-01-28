@@ -9,24 +9,23 @@
     </parent>
 
     <groupId>ricciliao.x</groupId>
-    <artifactId>cache-components</artifactId>
+    <artifactId>mcp-components</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>x-cache-components</name>
-    <description>Cache Consumer Components</description>
+    <name>x-mcp-components</name>
+    <description>Multi-Cache Consumer Components</description>
 
     <properties>
-        <assembly-common-component-jar.finalName>cache-common-component-${project.version}</assembly-common-component-jar.finalName>
-        <assembly-consumer-component-jar.finalName>cache-consumer-component-${project.version}</assembly-consumer-component-jar.finalName>
+        <assembly-common-component-jar.finalName>mcp-common-component-${project.version}</assembly-common-component-jar.finalName>
+        <assembly-consumer-component-jar.finalName>mcp-consumer-component-${project.version}</assembly-consumer-component-jar.finalName>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>ricciliao.x</groupId>
             <artifactId>common-components</artifactId>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

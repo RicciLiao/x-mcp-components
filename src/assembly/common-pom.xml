@@ -9,11 +9,11 @@
     </parent>
 
     <groupId>ricciliao.x</groupId>
-    <artifactId>cache-common-component</artifactId>
+    <artifactId>mcp-common-component</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>cache-consumer-common</name>
-    <description>Cache Common Component</description>
+    <name>mcp-common-component</name>
+    <description>Multi-Cache Common Component</description>
 
     <properties>
 

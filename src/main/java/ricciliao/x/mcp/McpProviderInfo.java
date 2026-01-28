@@ -1,4 +1,4 @@
-package ricciliao.x.cache.pojo;
+package ricciliao.x.mcp;
 
 
 import ricciliao.x.component.payload.PayloadData;
@@ -7,19 +7,20 @@ import java.io.Serial;
 import java.time.Instant;
 import java.util.Objects;
 
-public class ProviderInfo implements PayloadData {
+public class McpProviderInfo implements PayloadData {
     @Serial
     private static final long serialVersionUID = -3013557418500676494L;
+
     private Long count;
     private Instant createdDtm;
     private Instant maxUpdatedDtm;
-    private StoreIdentifier consumerIdentifier;
+    private McpIdentifier mcpIdentifier;
 
-    public ProviderInfo() {
+    public McpProviderInfo() {
     }
 
-    public ProviderInfo(StoreIdentifier consumerIdentifier) {
-        this.consumerIdentifier = consumerIdentifier;
+    public McpProviderInfo(McpIdentifier mcpIdentifier) {
+        this.mcpIdentifier = mcpIdentifier;
         this.count = 0L;
     }
 
@@ -47,23 +48,23 @@ public class ProviderInfo implements PayloadData {
         this.maxUpdatedDtm = maxUpdatedDtm;
     }
 
-    public StoreIdentifier getConsumerIdentifier() {
-        return consumerIdentifier;
+    public McpIdentifier getMcpIdentifier() {
+        return mcpIdentifier;
     }
 
-    public void setConsumerIdentifier(StoreIdentifier consumerIdentifier) {
-        this.consumerIdentifier = consumerIdentifier;
+    public void setMcpIdentifier(McpIdentifier mcpIdentifier) {
+        this.mcpIdentifier = mcpIdentifier;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof ProviderInfo that)) return false;
-        return Objects.equals(getCount(), that.getCount()) && Objects.equals(getCreatedDtm(), that.getCreatedDtm()) && Objects.equals(getMaxUpdatedDtm(), that.getMaxUpdatedDtm()) && Objects.equals(getConsumerIdentifier(), that.getConsumerIdentifier());
+        if (!(o instanceof McpProviderInfo that)) return false;
+        return Objects.equals(getCount(), that.getCount()) && Objects.equals(getCreatedDtm(), that.getCreatedDtm()) && Objects.equals(getMaxUpdatedDtm(), that.getMaxUpdatedDtm()) && Objects.equals(getMcpIdentifier(), that.getMcpIdentifier());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCount(), getCreatedDtm(), getMaxUpdatedDtm(), getConsumerIdentifier());
+        return Objects.hash(getCount(), getCreatedDtm(), getMaxUpdatedDtm(), getMcpIdentifier());
     }
 }

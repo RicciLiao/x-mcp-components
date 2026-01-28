@@ -10,11 +10,8 @@
         <fileSet>
             <directory>${project.build.outputDirectory}</directory>
             <includes>
-                <include>ricciliao/x/cache/pojo/ConsumerCache.class</include>
-                <include>ricciliao/x/cache/pojo/ConsumerOperation.class</include>
-                <include>ricciliao/x/cache/pojo/ConsumerOperation$Single.class</include>
-                <include>ricciliao/x/cache/pojo/ConsumerOperation$Batch.class</include>
-                <include>ricciliao/x/cache/ConsumerStore.class</include>
+                <include>ricciliao/x/mcp/ConsumerCache.class</include>
+                <include>ricciliao/x/mcp/ConsumerCacheData.class</include>
             </includes>
             <outputDirectory>/</outputDirectory>
         </fileSet>
