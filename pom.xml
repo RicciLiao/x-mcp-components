@@ -9,10 +9,10 @@
     </parent>
 
     <groupId>ricciliao.x</groupId>
-    <artifactId>mcp-components</artifactId>
+    <artifactId>mcp-component</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>x-mcp-components</name>
+    <name>x-mcp-component</name>
     <description>Multi-Cache Consumer Components</description>
 
     <properties>
