@@ -1,6 +1,6 @@
-# X-Cache-Components
+# Multi-Cache Provider Components
 
-## *Cache-Components `🚀️ V1.0.0`*
+## *Multi-Cache Provider(MCP) `🚀️ V1.0.0`*
 
 ### 📚 Dependency
 
@@ -13,15 +13,15 @@ Please refer to `dependencies-control-center` for the version number.
 
 ### Artifacts Output (org.apache.maven.plugins:maven-assembly-plugin)
 
-* cache-common-component-`${version}`.jar
+* mcp-common-component-`${version}`.jar
     * **assembly**: src/assembly/common.xml
     * **install**
         * **POM**: src/assembly/common-pom.xml
         * **Group Id**: ricciliao.x
-        * **Artifact Id**: cache-common-component
-* cache-consumer-component-`${version}`.jar
+      * **Artifact Id**: mcp-common-component
+* mcp-consumer-component-`${version}`.jar
     * **assembly**: src/assembly/consumer.xml
     * **install**
         * **POM**: src/assembly/consumer-pom.xml
         * **Group Id**: ricciliao.x
-        * **Artifact Id**: cache-consumer-component
+      * **Artifact Id**: mcp-consumer-component
