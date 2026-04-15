@@ -17,6 +17,7 @@
                 <include>ricciliao/x/mcp/query/*.class</include>
                 <include>ricciliao/x/mcp/McpConstants.class</include>
                 <include>ricciliao/x/mcp/McpCacheData.class</include>
+                <include>ricciliao/x/mcp/McpCacheIdListDto.class</include>
             </includes>
             <outputDirectory>/</outputDirectory>
         </fileSet>
